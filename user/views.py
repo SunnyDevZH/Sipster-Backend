@@ -6,6 +6,7 @@ from django.contrib.auth.models import User
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
 
+
 class RegisterView(APIView):
     def post(self, request):
         username = request.data.get('username')
@@ -35,3 +36,24 @@ class UserProfileView(APIView):
             'username': user.username,
             'email': user.email,
         })
+
+    def put(self, request):
+        user = request.user
+        data = request.data
+
+        # Aktualisiere die Benutzerdaten
+        user.username = data.get('username', user.username)
+        user.email = data.get('email', user.email)
+
+        # Passwort aktualisieren, falls angegeben
+        if 'password' in data and data['password']:
+            user.set_password(data['password'])
+
+        user.save()  # Speichere die Änderungen
+
+        return Response({
+            'message': 'Profil erfolgreich aktualisiert!',
+            'username': user.username,
+            'email': user.email,
+        }, status=status.HTTP_200_OK)
+

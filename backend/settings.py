@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-h4n#oxtvnxo-^pyg#7hpdd5h=csx&6jt3f=^y5kkehf5u&$wj3'
+SECRET_KEY = "dein-geheimer-key-123456789"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'restaurant',
     'corsheaders',
     'rest_framework',
+    'rest_framework_simplejwt',
 ]
 
 MIDDLEWARE = [
@@ -148,7 +149,7 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': True,
     'ALGORITHM': 'HS256',
-    'SIGNING_KEY': 'your-secret-key',  # Ersetze dies durch einen sicheren Schlüssel
+    'SIGNING_KEY': SECRET_KEY,  # Verwende den SECRET_KEY hier
 }
 
 CORS_ALLOW_ALL_ORIGINS = True
