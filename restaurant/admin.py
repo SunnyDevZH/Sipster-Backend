@@ -3,8 +3,11 @@ from .models import Restaurant, Category  # Importiere das Category-Modell
 
 @admin.register(Restaurant)
 class RestaurantAdmin(admin.ModelAdmin):
-    list_display = ['name', 'price', 'description', 'get_categories', 'image_preview']  # Zeigt das Bild in der Liste an
-    fields = ['name', 'price', 'description', 'categories', 'image']  # Felder im Bearbeitungsformular
+    list_display = ['name', 'price', 'description', 'phone', 'address', 'website', 'get_categories', 'image_preview']  # Zusätzliche Felder in der Liste
+    fields = [
+        'name', 'price', 'description', 'categories', 'image', 
+        'phone', 'address', 'opening_hours', 'website'  # Zusätzliche Felder im Bearbeitungsformular
+    ]
     filter_horizontal = ['categories']  # Aktiviert eine Mehrfachauswahl für Kategorien
 
     def get_categories(self, obj):

@@ -12,7 +12,10 @@ class RestaurantSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Restaurant
-        fields = ['id', 'name', 'description', 'price', 'categories', 'image']
+        fields = [
+            'id', 'name', 'description', 'price', 'categories', 'image',
+            'phone', 'address', 'opening_hours', 'website'  # Neue Felder hinzufügen
+        ]
 
     def get_image(self, obj):
         request = self.context.get('request')  # Kontext abrufen
