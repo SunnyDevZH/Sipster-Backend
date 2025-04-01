@@ -7,6 +7,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
 
 
+
 class RegisterView(APIView):
     def post(self, request):
         username = request.data.get('username')
@@ -35,6 +36,7 @@ class UserProfileView(APIView):
         return Response({
             'username': user.username,
             'email': user.email,
+            'birthdate': user.profile.birthdate,  
         })
 
     def put(self, request):
