@@ -17,4 +17,16 @@ class CustomUserAdmin(UserAdmin):
 admin.site.unregister(User)
 admin.site.register(User, CustomUserAdmin)
 
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'birthdate', 'profile_picture_preview')  # Felder, die im Admin angezeigt werden
+
+    def profile_picture_preview(self, obj):
+        if obj.profile_picture:
+            return f'<img src="{obj.profile_picture.url}" style="width: 50px; height: 50px;" />'
+        return "Kein Bild"
+    profile_picture_preview.allow_tags = True
+    profile_picture_preview.short_description = "Profilbild"
+
+admin.site.register(Profile, ProfileAdmin)
+
 

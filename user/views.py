@@ -57,5 +57,7 @@ class UserProfileView(APIView):
             'message': 'Profil erfolgreich aktualisiert!',
             'username': user.username,
             'email': user.email,
+            'birthdate': user.profile.birthdate,
+            'profile_picture': request.build_absolute_uri(user.profile.profile_picture.url) if user.profile.profile_picture else None,
         }, status=status.HTTP_200_OK)
 
