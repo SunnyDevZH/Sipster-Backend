@@ -1,6 +1,6 @@
 # Spister Backend
 
-Das Backend für die Spister-Anwendung, entwickelt mit Django und Django REST Framework. Es bietet APIs für Benutzerverwaltung, Profilbilder, Restaurant und andere Funktionen.
+Das Backend für die Spister-Anwendung, entwickelt mit Django und Django REST Framework. Es bietet APIs für Benutzerverwaltung, Profilbilder, Restaurant und andere Funktionen. Für die Authentifizierung wird JWT (JSON Web Token) verwendet.
 
 ## Voraussetzungen
 
