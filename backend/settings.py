@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user',
     'restaurant',
+    'categories',
     'corsheaders',
     'rest_framework',
     'rest_framework_simplejwt',

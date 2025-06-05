@@ -1,10 +1,5 @@
 from django.db import models
-
-class Category(models.Model):
-    name = models.CharField(max_length=100, unique=True)  # Kategoriename
-
-    def __str__(self):
-        return self.name
+from categories.models import Category  # <-- Importiere das richtige Modell (Singular!)
 
 class Restaurant(models.Model):
     PRICE_CHOICES = [

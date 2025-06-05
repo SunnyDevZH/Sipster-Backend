@@ -18,7 +18,11 @@ admin.site.unregister(User)
 admin.site.register(User, CustomUserAdmin)
 
 class ProfileAdmin(admin.ModelAdmin):
-    list_display = ('user', 'birthdate', 'profile_picture_preview')  # Felder, die im Admin angezeigt werden
+    list_display = ('user', 'email', 'birthdate', 'profile_picture_preview')  # Email hinzugefügt
+
+    def email(self, obj):
+        return obj.user.email
+    email.short_description = "E-Mail"
 
     def profile_picture_preview(self, obj):
         if obj.profile_picture:

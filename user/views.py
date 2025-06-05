@@ -55,6 +55,10 @@ class UserProfileView(APIView):
         if 'profile_picture' in request.FILES:
             user.profile.profile_picture = request.FILES['profile_picture']
 
+        # Geburtsdatum aktualisieren
+        if 'birthdate' in data and data['birthdate']:
+            user.profile.birthdate = data['birthdate']
+
         user.save()  # Speichere die Änderungen
         user.profile.save()  # Speichere das Profil
 
