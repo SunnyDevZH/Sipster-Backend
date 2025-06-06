@@ -70,7 +70,7 @@ Erledigt:
 - API-Daten bereit stellen (Restaurants, User usw.)
 - Frontend mit Backend verknüpfen
 
-**Meilenstein 3  2025**
+**Meilenstein 3 Donnerstag 2. Mai 2025**
 
 Video: Loom 
 
@@ -81,13 +81,14 @@ Erledigt:
 - Display Mode update
 - Logout
 
-**Meilenstein 4  2025**
+**Meilenstein 4 Freitag 6. Juni 2025**
 
 Video: Loom 
 
 Erledigt:
-- Code aufräumen
-- Code Doku erstellen
-- Testen
-- 
-- 
+- Fixtures mit Testdaten
+- Bugfix
+- Kategorien auch im Backend 
+- Feedback Button
+- Code Doku
+- Anpassung Readme

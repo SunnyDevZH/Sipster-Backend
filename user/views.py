@@ -43,24 +43,24 @@ class UserProfileView(APIView):
         user = request.user
         data = request.data
 
-        # Aktualisiere die Benutzerdaten
+       
         user.username = data.get('username', user.username)
         user.email = data.get('email', user.email)
 
-        # Passwort aktualisieren, falls angegeben
+       
         if 'password' in data and data['password']:
             user.set_password(data['password'])
 
-        # Profilbild aktualisieren
+       
         if 'profile_picture' in request.FILES:
             user.profile.profile_picture = request.FILES['profile_picture']
 
-        # Geburtsdatum aktualisieren
+       
         if 'birthdate' in data and data['birthdate']:
             user.profile.birthdate = data['birthdate']
 
-        user.save()  # Speichere die Änderungen
-        user.profile.save()  # Speichere das Profil
+        user.save() 
+        user.profile.save() 
 
         return Response({
             'message': 'Profil erfolgreich aktualisiert!',

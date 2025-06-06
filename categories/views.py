@@ -4,8 +4,6 @@ from rest_framework.response import Response
 from .models import Category
 from .serializers import CategorySerializer
 
-# Create your views here.
-
 class CategoryListView(APIView):
     def get(self, request):
         categories = Category.objects.all()
