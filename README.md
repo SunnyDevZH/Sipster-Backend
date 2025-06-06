@@ -40,6 +40,11 @@ Stelle sicher, dass die folgenden Tools auf deinem System installiert sind:
 
     python3 manage.py runserver
 
+## Für das Testen mit Testdaten:
+
+python manage.py loaddata testdaten.json
+
+
 ## Doku Projekt FFHS:
 
 **Meilenstein 1 Freitag, 14. Februar 2025**

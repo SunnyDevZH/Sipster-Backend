@@ -1,0 +1,225 @@
+[
+
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "user",
+    "model": "profile"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "restaurant",
+    "model": "restaurant"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "categories",
+    "model": "category"
+  }
+},
+{
+  "model": "restaurant.restaurant",
+  "pk": 2,
+  "fields": {
+    "name": "Tales Bar",
+    "description": "Cocktails nach Wunsch und kreative Drinks in einer kleinen, bis spät geöffneten Lounge mit intimem Ambiente.",
+    "price": "$$",
+    "image": "restaurant_images/talesbar.webp",
+    "phone": "044 542 38 02",
+    "address": "Selnaustrasse 29, 8001 Zürich",
+    "opening_hours": "Donnerstag\t18:00–03:00\r\nFreitag\t18:00–03:00\r\nSamstag\t20:00–03:00\r\nSonntag\tGeschlossen",
+    "website": "https://www.tales-bar.ch/",
+    "categories": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "restaurant.restaurant",
+  "pk": 3,
+  "fields": {
+    "name": "Bar am Wasser",
+    "description": "Cocktails und Barsnacks in einem stilvollen Lokal auf der gegenüberliegenden Straßenseite vom Flussufer.",
+    "price": "$$$",
+    "image": "restaurant_images/baramwasser.webp",
+    "phone": "044 527 80 01",
+    "address": "Stadthausquai 1, 8001 Zürich",
+    "opening_hours": "Donnerstag\t16:00–00:30\r\nFreitag\t16:00–00:30\r\nSamstag\t16:00–00:30\r\nSonntag\tGeschlossen\r\nMontag 16:00–00:30\r\nDienstag\t16:00–00:30\r\nMittwoch\t16:00–00:30",
+    "website": "https://www.baramwasser.ch/",
+    "categories": [
+      1,
+      3,
+      4,
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "restaurant.restaurant",
+  "pk": 4,
+  "fields": {
+    "name": "Widder Bar",
+    "description": "Hotelbar mit Holzboden und Holzbalken, 250-Malt-Whiskys sowie namhaften Jazzkünstlern im Frühjahr und Herbst.",
+    "price": "$$$",
+    "image": "restaurant_images/widderbar.webp",
+    "phone": "044 224 25 26",
+    "address": "Widdergasse 6, 8001 Zürich",
+    "opening_hours": "Donnerstag  12:00–01:00\r\nFreitag\t12:00–02:00\r\nSamstag\t12:00–02:00\r\nSonntag\t12:00–00:00\r\nMontag   12:00–01:00\r\nDienstag\t12:00–01:00\r\nMittwoch\t12:00–01:00",
+    "website": "https://www.widderhotel.com/en/eat-drink/widder-bar/",
+    "categories": [
+      1,
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "restaurant.restaurant",
+  "pk": 5,
+  "fields": {
+    "name": "ROKA BAR - Zürich",
+    "description": "\"Profis am Werk,mit Herz und Seele. Cocktails sind perfekt und das Ambiente sehr schön.\"",
+    "price": "$",
+    "image": "restaurant_images/rokabar.jpg",
+    "phone": "078 318 67 35",
+    "address": "Waisenhausstrasse 5, 8001 Zürich",
+    "opening_hours": "Donnerstag\t17:00–00:00\r\nFreitag\t17:00–00:00\r\nSamstag\t17:00–00:00\r\nSonntag\t17:00–00:00\r\nMontag   17:00–00:00\r\nDienstag\t17:00–00:00\r\nMittwoch\t17:00–00:00",
+    "website": null,
+    "categories": [
+      2,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "restaurant.restaurant",
+  "pk": 6,
+  "fields": {
+    "name": "BarMünster",
+    "description": "\"Hervorragende Cocktails\"",
+    "price": "$",
+    "image": "restaurant_images/barmunster.jpg",
+    "phone": "044 261 60 61",
+    "address": "Münstergasse 30, 8001 Zürich",
+    "opening_hours": "Donnerstag  17:00–00:00\r\nFreitag\t17:00–02:00\r\nSamstag\t14:00–02:00\r\nSonntag\t15:00–23:00\r\nMontag   17:00–00:00\r\nDienstag\t17:00–00:00\r\nMittwoch\t17:00–00:00",
+    "website": "https://barmuenster.ch/",
+    "categories": [
+      1,
+      2,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "restaurant.restaurant",
+  "pk": 7,
+  "fields": {
+    "name": "Barfussbar",
+    "description": "Barfuß tanzen in diesem originellen Lokal am Fluss, das im Sommer Partys veranstaltet.",
+    "price": "$",
+    "image": "restaurant_images/barfussbar.webp",
+    "phone": null,
+    "address": "Stadthausquai 12, 8001 Zürich",
+    "opening_hours": "Donnerstag  20:00–00:00\r\nFreitag\tGeschlossen\r\nSamstag\t20:00–00:00\r\nSonntag\t20:00–00:00\r\nMontag  Geschlossen\r\nDienstag\tGeschlossen\r\nMittwoch\t20:00–00:00",
+    "website": "https://barfussbar.ch/de/",
+    "categories": [
+      1,
+      3,
+      4,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "restaurant.restaurant",
+  "pk": 8,
+  "fields": {
+    "name": "Raygrodski",
+    "description": "Umfangreiche Auswahl an klassischen und kreativen Cocktails in einer gut besuchten Bar mit Straßenterrasse.",
+    "price": "$$",
+    "image": "restaurant_images/raygrodski.jpg",
+    "phone": "044 241 49 49",
+    "address": "Sihlfeldstrasse 49, 8003 Zürich",
+    "opening_hours": "Donnerstag\t18:00–00:00\r\nFreitag\t18:00–02:00\r\nSamstag\t18:00–02:00\r\nSonntag\tGeschlossen\r\nMontag   18:00–00:00\r\nDienstag\t18:00–00:00\r\nMittwoch\t18:00–00:00",
+    "website": "https://raygrodski-bar.ch/",
+    "categories": [
+      1,
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 1,
+  "fields": {
+    "name": "Drinks",
+    "image": "category_images/cocktail_EgKgE0S.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 2,
+  "fields": {
+    "name": "Wein",
+    "image": "category_images/wine-bottle_8o2gnmc.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 3,
+  "fields": {
+    "name": "Apero",
+    "image": "category_images/restaurant_kFwmPra.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 4,
+  "fields": {
+    "name": "Live Musik",
+    "image": "category_images/music_dUZlaAH.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 5,
+  "fields": {
+    "name": "Schaumwein",
+    "image": "category_images/champagne-glass_02FUXCS.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 6,
+  "fields": {
+    "name": "Bier",
+    "image": "category_images/beer2_rUOUpZd.png"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 7,
+  "fields": {
+    "name": "Alle",
+    "image": "category_images/alle_0yUuQSg.png"
+  }
+}
+]
