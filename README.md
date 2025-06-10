@@ -51,7 +51,7 @@ Stelle sicher, dass die folgenden Tools auf deinem System installiert sind:
 
 8.  **Für das Testen mit Testdaten**
     ```bash
-    python manage.py loaddata testdaten.json
+    python3 manage.py loaddata fixtures/testdaten.json
 
 ## Doku Projekt FFHS:
 
