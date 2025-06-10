@@ -8,41 +8,51 @@ Stelle sicher, dass die folgenden Tools auf deinem System installiert sind:
 
 - Python 3.10 oder höher
 - pip (Python Package Installer)
-- virtualenv (optional, aber empfohlen)
+- virtualenv 
 
 ## Installation
 
 1. **Repository klonen:**
 
    ```bash
-   git clone <repository-url>
-   cd Spister-Backend
+   git clone https://github.com/SunnyDevZH/Sipster-Backend
+   
 
-2. **Virtuele Umgebung erstelle und aktivieren**
+2. **Odner öffnen**
 
-    python3 -m venv venv
-    source venv/bin/activate    für Mac
-    venv\Scripts\activate       für Windows
+    ```bash
+    cd Sipster-Backend
 
-3. **Abhängigkeiten installieren:**
+3. **Virtuele Umgebung erstelle und aktivieren**
 
+    ```bash
+    - python3 -m venv venv
+    - source venv/bin/activate    für Mac
+    - venv\Scripts\activate       für Windows
+
+4. **Abhängigkeiten installieren:**
+
+    ```bash
     pip3 install -r requirements.txt
 
-4. **Datenbank migrieren**
+5. **Datenbank migrieren**
 
+    ```bash
     python3 manage.py migrate
 
-5. **Superuser erstellen**
+6. **Superuser erstellen**
 
+    ```bash
     python3 manage.py createsuperuser
 
-6. **Entwicklungsserver starten**
+7. **Entwicklungsserver starten**
 
+    ```bash
     python3 manage.py runserver
 
-## Für das Testen mit Testdaten:
-
-python manage.py loaddata testdaten.json
+8.  **Für das Testen mit Testdaten**
+    ```bash
+    python manage.py loaddata testdaten.json
 
 
 ## Doku Projekt FFHS:
@@ -51,13 +61,13 @@ python manage.py loaddata testdaten.json
 
 PDF mit:
 
-- BESCHREIBUNG DER APPLIKATION UND IHRES FUNKTIONSUMFANGS
-- FUNKTIONALE UND NICHTFUNKTIONALE ANFORDERUNGEN
-- PROJEKTSTRUKTUR: ROADMAP UND GROBE AUFGABEN
-- BEWERTUNG DER APPLIKATION HINSICHTLICH ALLGEMEINER PROJEKTANFORDERUNGEN
-- DESIGN-GRUNDBAUSTEINE
-- WIREFRAMES FÜR DAS FRONTEND
-- DIE TOOLS UND TECHNOLOGIEN
+- Beschreibung der Applikation und ihres Funktionsumfangs
+- Funktionale und nichtfunktionale Anforderungen
+- Projektstruktur: Roadmap und grobe Aufgaben
+- Bewertung der Applikation hinsichtlich allgemeiner Projektanforderungen
+- Design-Grundbausteine
+- Wireframes für das Frontend
+- Die Tools und Technologien
 
 **Meilenstein 2 Freitag, 28. März 2025**
 
