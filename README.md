@@ -17,7 +17,6 @@ Stelle sicher, dass die folgenden Tools auf deinem System installiert sind:
    ```bash
    git clone https://github.com/SunnyDevZH/Sipster-Backend
    
-
 2. **Odner öffnen**
 
     ```bash
@@ -53,7 +52,6 @@ Stelle sicher, dass die folgenden Tools auf deinem System installiert sind:
 8.  **Für das Testen mit Testdaten**
     ```bash
     python manage.py loaddata testdaten.json
-
 
 ## Doku Projekt FFHS:
 
