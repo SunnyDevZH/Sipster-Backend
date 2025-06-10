@@ -26,9 +26,9 @@ Stelle sicher, dass die folgenden Tools auf deinem System installiert sind:
 3. **Virtuele Umgebung erstelle und aktivieren**
 
     ```bash
-    - python3 -m venv venv
-    - source venv/bin/activate    für Mac
-    - venv\Scripts\activate       für Windows
+    python3 -m venv venv
+    source venv/bin/activate    für Mac
+    venv\Scripts\activate       für Windows
 
 4. **Abhängigkeiten installieren:**
 
