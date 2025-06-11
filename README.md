@@ -53,6 +53,11 @@ Stelle sicher, dass die folgenden Tools auf deinem System installiert sind:
     ```bash
     python3 manage.py loaddata fixtures/testdaten.json
 
+9. **(Optional) Unit Test & Integration Test für das Backend**
+    ```bash
+     python manage.py test
+     python manage.py test -v 2
+
 ## Doku Projekt FFHS:
 
 **Meilenstein 1 Freitag, 14. Februar 2025**
